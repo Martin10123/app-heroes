@@ -7,26 +7,24 @@ import PublicRoute from "./PublicRoute";
 const AppRouter = () => {
   return (
     <BrowserRouter>
-      <div>
-        <Routes>
-          <Route
-            path="/login"
-            element={
-              <PublicRoute>
-                <LoginScreen />
-              </PublicRoute>
-            }
-          />
-          <Route
-            path="/*"
-            element={
-              <PrivateRoute>
-                <DashBoardRouters />
-              </PrivateRoute>
-            }
-          />
-        </Routes>
-      </div>
+      <Routes>
+        <Route
+          path="/login"
+          element={
+            <PublicRoute>
+              <LoginScreen />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/*"
+          element={
+            <PrivateRoute>
+              <DashBoardRouters />
+            </PrivateRoute>
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 };

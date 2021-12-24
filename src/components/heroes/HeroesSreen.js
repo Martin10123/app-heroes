@@ -1,22 +1,22 @@
 import React, { useMemo } from "react";
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate, useNavigate } from "react-router-dom";
 import { getHeroByID } from "../../selectors/getHeroById";
 
-const HeroesSreen = ({ history }) => {
+const HeroesSreen = () => {
   const { heroeId } = useParams();
+  const navigate = useNavigate();
 
   const hero = useMemo(() => getHeroByID(heroeId), [heroeId]);
 
+  console.log(hero);
+  console.log("hola");
+
   if (!hero) {
-    return <Navigate to="/" />;
+    return <Navigate to="/marvel" />;
   }
 
   const handleReturn = () => {
-    if (history.length <= 2) {
-      history.push("/");
-    } else {
-      history.goBack();
-    }
+    navigate(-1);
   };
 
   const { superhero, publisher, alter_ego, first_appearance, characters } =
@@ -32,7 +32,7 @@ const HeroesSreen = ({ history }) => {
         />
       </div>
       <div className="col-8">
-        <h3> {superhero} </h3>
+        <h3 style={{ fontSize: "3.2rem" }}> {superhero} </h3>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
             <b>Alter ego: </b> {alter_ego}
@@ -45,8 +45,8 @@ const HeroesSreen = ({ history }) => {
           </li>
         </ul>
 
-        <h5>characters</h5>
-        <p>{characters}</p>
+        <h5 style={{ fontSize: "2.5rem" }}>characters</h5>
+        <p style={{ fontSize: "2rem" }}>{characters}</p>
 
         <button className="btn btn-outline-info" onClick={handleReturn}>
           return

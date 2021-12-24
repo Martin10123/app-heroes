@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../auth/AuthContext";
 import { types } from "../../types/types";
 
@@ -21,10 +21,6 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-      <Link className="navbar-brand" to="/">
-        Asociaciones
-      </Link>
-
       <div className="navbar-collapse">
         <div className="navbar-nav">
           <NavLink

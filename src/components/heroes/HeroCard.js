@@ -8,6 +8,7 @@ const HeroCard = ({
   first_appearance,
   characters,
 }) => {
+  console.log(id);
   return (
     <div className="card ms-3" style={{ maxWidth: 540 }}>
       <div className="row no-gutters">
@@ -28,7 +29,7 @@ const HeroCard = ({
             <p className="card-text">
               <small className="text-muted">{first_appearance}</small>
             </p>
-            <Link to={`./hero/${id}`}>Más...</Link>
+            <Link to={`/hero/${id}`}>Más...</Link>
           </div>
         </div>
       </div>

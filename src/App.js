@@ -11,6 +11,8 @@ function App() {
   const [user, dispatch] = useReducer(authReducer, {}, init);
 
   useEffect(() => {
+    if (!user) return;
+
     localStorage.setItem("user", JSON.stringify(user));
   }, [user]);
 
