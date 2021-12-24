@@ -8,7 +8,6 @@ const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  console.log(id);
   return (
     <div className="card ms-3" style={{ maxWidth: 540 }}>
       <div className="row no-gutters">
