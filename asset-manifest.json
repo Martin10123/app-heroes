@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/app-heroes/static/css/main.08034ee6.chunk.css",
+    "main.js": "/app-heroes/static/js/main.6c4ba840.chunk.js",
+    "main.js.map": "/app-heroes/static/js/main.6c4ba840.chunk.js.map",
+    "runtime-main.js": "/app-heroes/static/js/runtime-main.8c1d388d.js",
+    "runtime-main.js.map": "/app-heroes/static/js/runtime-main.8c1d388d.js.map",
+    "static/js/2.6664a50a.chunk.js": "/app-heroes/static/js/2.6664a50a.chunk.js",
+    "static/js/2.6664a50a.chunk.js.map": "/app-heroes/static/js/2.6664a50a.chunk.js.map",
+    "index.html": "/app-heroes/index.html",
+    "static/css/main.08034ee6.chunk.css.map": "/app-heroes/static/css/main.08034ee6.chunk.css.map",
+    "static/js/2.6664a50a.chunk.js.LICENSE.txt": "/app-heroes/static/js/2.6664a50a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c1d388d.js",
+    "static/js/2.6664a50a.chunk.js",
+    "static/css/main.08034ee6.chunk.css",
+    "static/js/main.6c4ba840.chunk.js"
+  ]
+}
